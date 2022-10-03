@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!.gitconfig
+!.config/fish/config.fish
+
+# ...even if they are in subdirectories
+!*/

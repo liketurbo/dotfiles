@@ -1,0 +1,8 @@
+[alias]
+	cm = commit
+	co = checkout
+[user]
+	email = 4y9hx1bs@mozmail.com
+	name = Rami Chasygov
+[init]
+	defaultBranch = main
