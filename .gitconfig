@@ -2,7 +2,7 @@
 	cm = commit
 	co = checkout
 [user]
-	email = 4y9hx1bs@mozmail.com
+	email = 4y9hx1bs1@mozmail.com
 	name = Rami Chasygov
 [init]
 	defaultBranch = main
