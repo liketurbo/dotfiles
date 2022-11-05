@@ -1,11 +1,23 @@
-# Ignore everything
-*
+# Ignore everything (dirs, files, sub-dirs, sub-files)
+/*
 
-# But not these files...
+# But do not ignore these files...
 !/.gitignore
 !/.gitconfig
 !/.vimrc
-!/.config/fish/config.fish
 
-# ...even if they are in subdirectories
-!*/
+# Do not ignore .config folder
+!/.config
+# ... but ignore files and dirs in the .config directory
+/.config/*
+
+# Do not ignore fish and nvim directory
+!/.config/fish
+!/.config/nvim
+# ... but ignore files and dirs in the each directory
+/.config/fish/*
+/.config/nvim/*
+
+# Do not ignore these files
+!/.config/fish/config.fish
+!/.config/nvim/init.vim
