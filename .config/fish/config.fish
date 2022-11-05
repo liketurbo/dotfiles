@@ -3,3 +3,7 @@ set fish_greeting
 
 # Change keybindings to vi
 fish_vi_key_bindings
+
+# Aliases
+alias ll="exa -l"
+alias vim="nvim"
