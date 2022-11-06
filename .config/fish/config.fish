@@ -7,3 +7,4 @@ fish_vi_key_bindings
 # Aliases
 alias ll="exa -l"
 alias vim="nvim"
+alias cls="clear"
