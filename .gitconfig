@@ -1,8 +1,9 @@
 [alias]
-	cm = commit
-	co = checkout
+  cm = commit
+  co = checkout
+  ss = status
 [user]
-	email = 4y9hx1bs1@mozmail.com
-	name = Rami Chasygov
+  email = 4y9hx1bs1@mozmail.com
+  name = Rami Chasygov
 [init]
-	defaultBranch = main
+  defaultBranch = main
