@@ -22,4 +22,10 @@ return require('packer').startup(function(use)
   vim.keymap.set('v', 'W', '<Plug>(easymotion-b)')
   vim.keymap.set('v', 'H', '<Plug>(easymotion-k)')
   vim.keymap.set('v', 'L', '<Plug>(easymotion-j)')
+
+  -- Theme
+  use 'ayu-theme/ayu-vim'
+  -- ... config
+  vim.g.ayucolor = 'dark'
+  vim.cmd "colorscheme ayu"
 end)
