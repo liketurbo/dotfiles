@@ -28,4 +28,7 @@ return require('packer').startup(function(use)
   -- ... config
   vim.g.ayucolor = 'dark'
   vim.cmd "colorscheme ayu"
+
+  -- Bottom line
+  use 'itchyny/lightline.vim'
 end)
