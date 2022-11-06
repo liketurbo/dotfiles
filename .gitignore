@@ -4,7 +4,7 @@
 # But do not ignore these files...
 !/.gitignore
 !/.gitconfig
-!/.vimrc
+!/.tmux.conf
 
 # Do not ignore .config folder
 !/.config
