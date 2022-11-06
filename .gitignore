@@ -20,6 +20,7 @@
 
 # Do not ignore these files
 !/.config/fish/config.fish
+!/.config/fish/fish_plugins
 !/.config/nvim/init.lua
 
 # Do not ignore lua directory
