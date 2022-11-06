@@ -7,4 +7,19 @@ return require('packer').startup(function(use)
 
   -- Autocompletion
   use {'neoclide/coc.nvim', branch = 'release'}
+
+  -- Easymotion
+  use 'easymotion/vim-easymotion'
+  -- ... jump to occurrence (normal mode)
+  -- ... find a word
+  vim.keymap.set('n', 'w', '<Plug>(easymotion-w)')
+  vim.keymap.set('n', 'W', '<Plug>(easymotion-b)')
+  vim.keymap.set('n', 'H', '<Plug>(easymotion-k)')
+  vim.keymap.set('n', 'L', '<Plug>(easymotion-j)')
+  -- ... jump to occurrence (visual mode)
+  -- ... find a word
+  vim.keymap.set('v', 'w', '<Plug>(easymotion-w)')
+  vim.keymap.set('v', 'W', '<Plug>(easymotion-b)')
+  vim.keymap.set('v', 'H', '<Plug>(easymotion-k)')
+  vim.keymap.set('v', 'L', '<Plug>(easymotion-j)')
 end)
