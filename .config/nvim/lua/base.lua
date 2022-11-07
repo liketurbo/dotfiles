@@ -15,3 +15,6 @@ vim.opt.shiftwidth = 2
 
 -- Change leader key
 vim.g.mapleader = ' '
+
+-- Disable line wrap
+vim.wo.wrap = false
