@@ -12,3 +12,6 @@ vim.api.nvim_command('augroup END')
 
 -- Change tabspace from 4 to 2
 vim.opt.shiftwidth = 2
+
+-- Change leader key
+vim.g.mapleader = ' '
