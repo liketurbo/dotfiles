@@ -40,4 +40,7 @@ return require('packer').startup(function(use)
   vim.keymap.set('n', '<leader>g', builtin.live_grep, {})
   vim.keymap.set('n', '<leader>b', builtin.buffers, {})
   vim.keymap.set('n', '<leader>h', builtin.help_tags, {})
+
+  -- Icons for file explorer
+  use 'nvim-tree/nvim-web-devicons'
 end)
