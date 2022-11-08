@@ -10,3 +10,6 @@ vim.cmd('nnoremap <leader>o :e <C-R>=expand("%:p:h") . "/" <CR>')
 
 -- Paste with <C-v>
 vim.keymap.set('i', '<C-v>', '<C-r>"')
+
+-- Close buffer
+vim.keymap.set('n', ':bd', '<leader>q')
