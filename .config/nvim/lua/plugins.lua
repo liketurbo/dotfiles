@@ -23,4 +23,16 @@ require('packer').startup(function(use)
 
   -- More reasonable highlight search
   use 'romainl/vim-cool'
+
+  -- NVim LSP configuration
+  use 'neovim/nvim-lspconfig'
+
+  -- Rust LSP
+  use 'simrat39/rust-tools.nvim'
+
+  -- Show state of the progress
+  use 'j-hui/fidget.nvim'
+  
+  -- Highlight trouble lines
+  use 'folke/trouble.nvim'
 end)
