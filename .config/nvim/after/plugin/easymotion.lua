@@ -1,6 +1,9 @@
 -- ... disable <leader><leader>
 vim.keymap.set('n', '<leader>', '<Plug>(easymotion-prefix)')
 
+-- Toggle between buffers
+vim.keymap.set('n', '<leader><leader>', '<C-^>')
+
 -- ... find a word
 vim.keymap.set('n', 'f', '<Plug>(easymotion-w)')
 vim.keymap.set('n', 'F', '<Plug>(easymotion-b)')
