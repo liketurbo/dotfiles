@@ -12,10 +12,11 @@ require('packer').startup(function(use)
   use 'itchyny/lightline.vim'
 
   -- Fuzzy finder
+  use 'airblade/vim-rooter'
   use {'junegunn/fzf', run = './install --bin'}
   use {'ibhagwan/fzf-lua',
     -- ... icon support
-    requires = {'kyazdani42/nvim-web-devicons'}
+    requires = 'kyazdani42/nvim-web-devicons'
   }
 
   -- Easymotion
@@ -35,4 +36,14 @@ require('packer').startup(function(use)
   
   -- Highlight trouble lines
   use 'folke/trouble.nvim'
+
+  -- Autocomplete
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-nvim-lsp-signature-help'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/vim-vsnip'
+  use 'hrsh7th/vim-vsnip-integ'
 end)
