@@ -49,4 +49,16 @@ require('packer').startup(function(use)
     'phaazon/hop.nvim',
     branch = 'v2'
   }
+
+  -- Treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
+  
+  -- Highlight used args
+  use {
+    'm-demare/hlargs.nvim',
+    requires = { 'nvim-treesitter/nvim-treesitter' }
+  }
 end)

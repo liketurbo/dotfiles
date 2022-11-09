@@ -33,7 +33,6 @@
 
 # ... except these files
 !/.config/nvim/lua/base.lua
-!/.config/nvim/lua/highlights.lua
 !/.config/nvim/lua/maps.lua
 !/.config/nvim/lua/plugins.lua
 
@@ -45,6 +44,7 @@
 
 # ... except these files
 !/.config/nvim/after/plugin/autocomplete.lua
+!/.config/nvim/after/plugin/highlights.lua
 !/.config/nvim/after/plugin/hop.lua
 !/.config/nvim/after/plugin/fidget.lua
 !/.config/nvim/after/plugin/fuzzyfinder.lua
