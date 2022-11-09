@@ -1,5 +1,6 @@
 require('fidget').setup()
 require('trouble').setup()
+local rt = require("rust-tools")
 
 local opts = {
   -- rust-tools options
@@ -46,4 +47,4 @@ local opts = {
       }
     },
 }
-require('rust-tools').setup(opts)
+rt.setup(opts)
