@@ -19,9 +19,6 @@ require('packer').startup(function(use)
     requires = 'kyazdani42/nvim-web-devicons'
   }
 
-  -- Easymotion
-  use 'easymotion/vim-easymotion'
-
   -- More reasonable highlight search
   use 'romainl/vim-cool'
 
@@ -46,4 +43,10 @@ require('packer').startup(function(use)
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/vim-vsnip'
   use 'hrsh7th/vim-vsnip-integ'
+
+  -- Easy hop (analog of Easymotion)
+  use {
+    'phaazon/hop.nvim',
+    branch = 'v2'
+  }
 end)
