@@ -7,6 +7,6 @@ vim.keymap.set('n', '<leader>;',
     {noremap = true, silent = true}
 )
 vim.keymap.set('n', '<leader>f',
-    "<cmd>lua require('fzf-lua').grep_cWORD()<CR>", 
+    "<cmd>lua require('fzf-lua').live_grep()<CR>", 
     {noremap = true, silent = true}
 )
