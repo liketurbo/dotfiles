@@ -25,3 +25,6 @@ vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
 
 -- Smooth scroll
 require('neoscroll').setup()
+
+-- Format on save
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
