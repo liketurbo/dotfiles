@@ -18,3 +18,7 @@ vim.g.mapleader = ' '
 
 -- Disable line wrap
 vim.wo.wrap = false
+
+-- Set fold
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'

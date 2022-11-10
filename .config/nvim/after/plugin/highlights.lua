@@ -13,6 +13,3 @@ require('nvim-treesitter.configs').setup {
     max_file_lines = nil,
   }
 }
-
--- Setup used args highlight
-require('hlargs').setup()
