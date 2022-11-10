@@ -22,3 +22,6 @@ vim.wo.wrap = false
 -- Set fold
 vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
+
+-- Smooth scroll
+require('neoscroll').setup()

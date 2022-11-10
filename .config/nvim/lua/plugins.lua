@@ -55,4 +55,6 @@ require('packer').startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+
+  use 'karb94/neoscroll.nvim'
 end)
