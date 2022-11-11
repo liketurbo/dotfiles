@@ -56,5 +56,9 @@ require('packer').startup(function(use)
     run = ':TSUpdate'
   }
 
+  -- Smooth scroll
   use 'karb94/neoscroll.nvim'
+
+  -- GitHub Copilot
+  use 'github/copilot.vim'
 end)
