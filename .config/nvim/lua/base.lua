@@ -28,3 +28,6 @@ require('neoscroll').setup()
 
 -- Format on save
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
+
+-- Disalble highlight all search matches
+vim.opt.hlsearch = false
