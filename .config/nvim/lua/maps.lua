@@ -11,11 +11,12 @@ vim.cmd('nnoremap <leader>o :e <C-R>=expand("%:p:h") . "/" <CR>')
 -- Paste with <C-v>
 vim.keymap.set('i', '<C-v>', '<C-r>"')
 
--- Close buffer
-vim.keymap.set('n', '<leader>q', ':bd<CR>')
-
 -- Save a file
 vim.keymap.set('n', '<leader>w', ':w<CR>')
 
 -- Toggle between buffers
 vim.keymap.set('n', '<leader><leader>', '<C-^>', {noremap = true})
+
+-- Switch back to normal mode
+vim.keymap.set('i', 'jk', '<Esc>')
+vim.keymap.set('i', 'kj', '<Esc>')
