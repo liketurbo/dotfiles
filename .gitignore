@@ -14,27 +14,34 @@
 # Do not ignore fish and nvim directory
 !/.config/fish
 !/.config/nvim
+!/.config/mpv
 # ... but ignore files and dirs in the each directory
 /.config/fish/*
 /.config/nvim/*
+/.config/mpv/*
 
 # Do not ignore these files
 !/.config/fish/config.fish
 !/.config/fish/fish_plugins
 !/.config/nvim/init.lua
+!/.config/mpv/input.conf
+!/.config/mpv/mpv.conf
 
-# Do not ignore lua, after directory
+# Do not ignore lua, after, scripts directories
 !/.config/nvim/lua
 !/.config/nvim/after
+!/.config/mpv/scripts
 
 # ... but ignore all files and dirs in these directories
 /.config/nvim/lua/*
 /.config/nvim/after/*
+/.config/mpv/scripts/*
 
 # ... except these files
 !/.config/nvim/lua/base.lua
 !/.config/nvim/lua/maps.lua
 !/.config/nvim/lua/plugins.lua
+!/.config/mpv/scripts/autoload.lua
 
 # Do not ignore after/plugin directory
 !/.config/nvim/after/plugin
