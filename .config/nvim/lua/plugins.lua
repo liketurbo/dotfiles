@@ -29,10 +29,20 @@ require('packer').startup(function(use)
   use 'simrat39/rust-tools.nvim'
 
   -- Show state of the progress
-  use 'j-hui/fidget.nvim'
+  use {
+    'j-hui/fidget.nvim',
+    config = function()
+      require'fidget'.setup {}
+    end
+  }
   
   -- Highlight trouble lines
-  use 'folke/trouble.nvim'
+  use {
+    'folke/trouble.nvim',
+    config = function()
+      require'trouble'.setup {}
+    end
+  }
 
   -- Autocomplete
   use 'hrsh7th/cmp-buffer'

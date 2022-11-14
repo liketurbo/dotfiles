@@ -1,5 +1,3 @@
-require('fidget').setup()
-require('trouble').setup()
 local rt = require('rust-tools')
 
 local opts = { noremap=true, silent=true }
