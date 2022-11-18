@@ -19,9 +19,6 @@ require('packer').startup(function(use)
     requires = 'kyazdani42/nvim-web-devicons'
   }
 
-  -- More reasonable highlight search
-  use 'romainl/vim-cool'
-
   -- NVim LSP configuration
   use 'neovim/nvim-lspconfig'
 
