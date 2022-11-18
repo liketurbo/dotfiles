@@ -28,3 +28,6 @@ vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
 
 -- Disalble highlight all search matches
 vim.opt.hlsearch = false
+
+-- Fix copilot not enabled
+vim.g.copilot_assume_mapped = true
