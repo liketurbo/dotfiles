@@ -58,4 +58,10 @@ require('packer').startup(function(use)
 
   -- GitHub Copilot
   use 'github/copilot.vim'
+	-- File explorer
+	use {
+		'nvim-telescope/telescope.nvim', tag = '0.1.0',
+		requires = { { 'nvim-lua/plenary.nvim' } }
+	}
+	use { "nvim-telescope/telescope-file-browser.nvim" }
 end)
