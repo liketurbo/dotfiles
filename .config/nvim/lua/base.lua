@@ -15,10 +15,6 @@ vim.api.nvim_command('autocmd!')
 vim.api.nvim_command('au TextYankPost * silent! lua vim.highlight.on_yank { higroup=\'IncSearch\', timeout=200 }')
 vim.api.nvim_command('augroup END')
 
--- Set fold
-vim.wo.foldmethod = 'expr'
-vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
-
 -- Disable search highlight
 vim.opt.hlsearch = false
 
