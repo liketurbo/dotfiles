@@ -19,9 +19,6 @@ vim.api.nvim_command('augroup END')
 vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
 
--- Format on save
-vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
-
 -- Disable search highlight
 vim.opt.hlsearch = false
 
