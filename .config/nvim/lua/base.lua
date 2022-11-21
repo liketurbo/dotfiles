@@ -1,23 +1,19 @@
--- Display line enumeration
+-- Number lines
 vim.wo.number = true
-
--- Use global clipboard
+-- Global clipboard
 vim.opt.clipboard = 'unnamedplus'
+-- Tabspace 2
+vim.opt.shiftwidth = 2
+-- Leader key
+vim.g.mapleader = ' '
+-- No wrap
+vim.wo.wrap = false
 
 -- Highlight yank
 vim.api.nvim_command('augroup highlight_yank')
 vim.api.nvim_command('autocmd!')
 vim.api.nvim_command('au TextYankPost * silent! lua vim.highlight.on_yank { higroup=\'IncSearch\', timeout=200 }')
 vim.api.nvim_command('augroup END')
-
--- Change tabspace from 4 to 2
-vim.opt.shiftwidth = 2
-
--- Change leader key
-vim.g.mapleader = ' '
-
--- Disable line wrap
-vim.wo.wrap = false
 
 -- Set fold
 vim.wo.foldmethod = 'expr'
@@ -26,8 +22,8 @@ vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
 -- Format on save
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
 
--- Disalble highlight all search matches
+-- Disable search highlight
 vim.opt.hlsearch = false
 
--- Fix copilot not enabled
+-- Copilot + cmp
 vim.g.copilot_assume_mapped = true
