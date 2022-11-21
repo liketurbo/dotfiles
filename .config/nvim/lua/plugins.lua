@@ -5,8 +5,7 @@ require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'  
 
-  -- Theme
-  use 'ayu-theme/ayu-vim'
+  use 'folke/tokyonight.nvim'
   
   -- Bottom line
   use 'itchyny/lightline.vim'
