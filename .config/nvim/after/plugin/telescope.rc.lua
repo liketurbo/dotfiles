@@ -24,10 +24,9 @@ telescope.setup {
       hijack_netrw = true,
       mappings = {
         ["n"] = {
-          -- your custom normal mode mappings
-          ["N"] = fb_actions.create,
           ["h"] = fb_actions.goto_parent_dir,
-	},
+          ["l"] = actions.select_default
+        },
       },
     },
   },
@@ -41,7 +40,7 @@ vim.keymap.set('n', '<C-p>',
       no_ignore = false,
       hidden = true
     })
-end)
+  end)
 vim.keymap.set('n', ';r', function()
   builtin.live_grep()
 end)
