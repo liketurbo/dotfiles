@@ -3,7 +3,9 @@ local lspkind = require 'lspkind'
 
 cmp.setup {
   snippet = {
-    expand = function() end,
+    expand = function(args)
+      vim.fn["vsnip#anonymous"](args.body)
+    end,
   },
   mapping = {
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
