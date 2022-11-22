@@ -17,6 +17,9 @@ cmp.setup {
     ['<CR>'] = cmp.mapping.confirm({
       select = true,
     }),
+    ['<C-l>'] = cmp.mapping.confirm({
+      select = true,
+    }),
   },
   sources = {
     { name = 'nvim_lsp' },
