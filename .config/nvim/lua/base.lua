@@ -1,5 +1,4 @@
 vim.g.mapleader = ' ' -- Leader key
-vim.g.copilot_assume_mapped = true -- Copilot + cmp
 vim.wo.wrap = false -- No wrap
 vim.wo.number = true -- Number lines
 vim.opt.clipboard = 'unnamedplus' -- Global clipboard
