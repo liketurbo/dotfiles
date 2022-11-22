@@ -14,14 +14,6 @@ require('packer').startup(function(use)
   -- LSP
   use 'neovim/nvim-lspconfig'
 
-  -- Visualize lsp progress
-  use({
-    'j-hui/fidget.nvim',
-    config = function()
-      require('fidget').setup()
-    end
-  })
-
   -- Treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
