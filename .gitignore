@@ -56,3 +56,4 @@
 !/.config/nvim/after/plugin/tokyonight.rc.lua
 !/.config/nvim/after/plugin/treesitter.rc.lua
 !/.config/nvim/after/plugin/web-devicons.rc.lua
+!/.config/nvim/after/plugin/copilot.rc.lua

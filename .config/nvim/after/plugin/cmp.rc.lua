@@ -1,8 +1,10 @@
 local cmp = require 'cmp'
 local lspkind = require 'lspkind'
 
-vim.g.copilot_no_tab_map = true
-vim.g.copilot_assume_mapped = true
+local check_backspace = function()
+  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+  return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match "%s" == nil
+end
 
 cmp.setup {
   snippet = {
@@ -20,16 +22,9 @@ cmp.setup {
     ['<CR>'] = cmp.mapping.confirm({
       select = true,
     }),
-    ['<Tab>'] = cmp.mapping(function(fallback)
-      local copilot_keys = vim.fn['copilot#Accept']()
-      if cmp.visible() then
-        cmp.confirm({ select = true })
-      elseif copilot_keys ~= '' and type(copilot_keys) == 'string' then
-        vim.api.nvim_feedkeys(copilot_keys, 'i', true)
-      else
-        fallback()
-      end
-    end),
+    ['<Tab>'] = cmp.mapping.confirm({
+      select = true,
+    }),
   },
   sources = {
     { name = 'nvim_lsp' },
