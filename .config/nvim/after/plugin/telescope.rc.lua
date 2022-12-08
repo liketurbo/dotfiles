@@ -13,8 +13,12 @@ telescope.setup {
   defaults = {
     mappings = {
       n = {
-        ["q"] = actions.close
+        ["q"] = actions.close,
+        ["l"] = actions.select_default
       },
+      i = {
+        ["qq"] = actions.close,
+      }
     },
   },
   extensions = {
