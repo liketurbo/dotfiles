@@ -1,55 +1,56 @@
-# Ignore everything (dirs, files, sub-dirs, sub-files)
+# Dirs
 /*
+!/.config
+/.config/*
 
-# But do not ignore these files...
+# Files
 !/.gitignore
 !/.gitconfig
 !/.tmux.conf
 
-# Do not ignore .config folder
-!/.config
-# ... but ignore files and dirs in the .config directory
-/.config/*
-
-# Do not ignore fish and nvim directory
+## Dirs
 !/.config/fish
-!/.config/nvim
-!/.config/mpv
-# ... but ignore files and dirs in the each directory
 /.config/fish/*
+
+!/.config/nvim
 /.config/nvim/*
+
+!/.config/mpv
 /.config/mpv/*
 
-# Do not ignore these files
+### Dirs
+!/.config/nvim/lua
+/.config/nvim/lua/*
+!/.config/nvim/after
+/.config/nvim/after/*
+!/.config/nvim/queries
+/.config/nvim/queries/*
+
+!/.config/mpv/scripts
+/.config/mpv/scripts/*
+
+### Files
+!/.config/nvim/init.lua
+
 !/.config/fish/config.fish
 !/.config/fish/fish_plugins
-!/.config/nvim/init.lua
+
 !/.config/mpv/input.conf
 !/.config/mpv/mpv.conf
 
-# Do not ignore lua, after, scripts directories
-!/.config/nvim/lua
-!/.config/nvim/after
-!/.config/mpv/scripts
+#### Dirs
+!/.config/nvim/after/plugin
+/.config/nvim/after/plugin/*
+!/.config/nvim/queries/func
+/.config/nvim/queries/func/*
 
-# ... but ignore all files and dirs in these directories
-/.config/nvim/lua/*
-/.config/nvim/after/*
-/.config/mpv/scripts/*
-
-# ... except these files
+#### Files
 !/.config/nvim/lua/base.lua
 !/.config/nvim/lua/maps.lua
 !/.config/nvim/lua/plugins.lua
 !/.config/mpv/scripts/autoload.lua
 
-# Do not ignore after/plugin directory
-!/.config/nvim/after/plugin
-
-# ... but ignore all files in that directory
-/.config/nvim/after/plugin/*
-
-# ... except these files
+##### Files
 !/.config/nvim/after/plugin/cmp.rc.lua
 !/.config/nvim/after/plugin/lsp-config.rc.lua
 !/.config/nvim/after/plugin/telescope.rc.lua
@@ -57,3 +58,4 @@
 !/.config/nvim/after/plugin/treesitter.rc.lua
 !/.config/nvim/after/plugin/web-devicons.rc.lua
 !/.config/nvim/after/plugin/copilot.rc.lua
+!/.config/nvim/queries/func/highlights.scm
