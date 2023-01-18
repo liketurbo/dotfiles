@@ -31,9 +31,9 @@ ts.setup {
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
 parser_config.func = {
   install_info = {
-    url = "/home/liketurbo/Projects/vscode-func/grammar/func",
+    url = "/home/kennym/Projects/tree-sitter-func",
     files = { "src/parser.c", },
-    branch = "main",
+    branch = "master",
     generate_requires_npm = false,
     requires_generate_from_grammar = false,
   },
