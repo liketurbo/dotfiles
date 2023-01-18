@@ -40,10 +40,7 @@ telescope.load_extension("file_browser")
 
 vim.keymap.set('n', '<C-p>',
   function()
-    builtin.find_files({
-      no_ignore = false,
-      hidden = true
-    })
+    builtin.find_files()
   end)
 vim.keymap.set('n', ';r', function()
   builtin.live_grep()
