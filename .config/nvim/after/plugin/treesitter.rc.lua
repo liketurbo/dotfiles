@@ -12,14 +12,16 @@ ts.setup {
   },
   ensure_installed = {
     "rust",
-    "tsx",
+    "javascript",
     "toml",
     "fish",
     "json",
     "yaml",
     "css",
     "html",
-    "lua"
+    "lua",
+    "c",
+    "cpp",
   },
   autotag = {
     enable = true,
