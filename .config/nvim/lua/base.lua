@@ -4,7 +4,7 @@ vim.wo.number = true -- Number lines
 vim.opt.clipboard = 'unnamedplus' -- Global clipboard
 vim.opt.hlsearch = false -- Disable search highlight
 vim.api.nvim_command('au TextYankPost * silent! lua vim.highlight.on_yank { higroup=\'IncSearch\', timeout=200 }') -- Highlight yank
-vim.opt.timeoutlen = 250 -- Time to wait for a mapped sequence to complete (in milliseconds)
+vim.opt.timeoutlen = 300 -- Time to wait for a mapped sequence to complete (in milliseconds)
 
 -- Fold
 vim.opt.foldmethod = "expr"
