@@ -13,6 +13,8 @@ ts.setup {
   ensure_installed = {
     "rust",
     "javascript",
+    "typescript",
+    "tsx",
     "toml",
     "fish",
     "json",
