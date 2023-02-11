@@ -1,21 +1,6 @@
 local nvim_lsp = require('lspconfig')
 local rt = require('rust-tools')
 
-vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, buf_opts)
-vim.keymap.set('n', 'gd', vim.lsp.buf.definition, buf_opts)
-vim.keymap.set('n', '<C-Space>', vim.lsp.buf.hover, buf_opts)
-vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, buf_opts)
-vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, buf_opts)
-vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, buf_opts)
-vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename, buf_opts)
-vim.keymap.set('n', '<leader>a', vim.lsp.buf.code_action, buf_opts)
-vim.keymap.set('n', 'gr', vim.lsp.buf.references, buf_opts)
-vim.keymap.set('n', '<leader>f', vim.lsp.buf.formatting, buf_opts)
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, buf_opts)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, buf_opts)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, buf_opts)
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, buf_opts)
-
 local lsp_formatting = function(bufnr)
   vim.lsp.buf.format({
     filter = function(client)
@@ -26,10 +11,25 @@ local lsp_formatting = function(bufnr)
   })
 end
 
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-
 local on_attach = function(client, bufnr)
   local buf_opts = { noremap = true, silent = true, buffer = bufnr }
+
+  vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, buf_opts)
+  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, buf_opts)
+  vim.keymap.set('n', '<C-Space>', vim.lsp.buf.hover, buf_opts)
+  vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, buf_opts)
+  vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, buf_opts)
+  vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, buf_opts)
+  vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename, buf_opts)
+  vim.keymap.set('n', '<leader>a', vim.lsp.buf.code_action, buf_opts)
+  vim.keymap.set('n', 'gr', vim.lsp.buf.references, buf_opts)
+  vim.keymap.set('n', '<leader>f', vim.lsp.buf.formatting, buf_opts)
+  vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, buf_opts)
+  vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, buf_opts)
+  vim.keymap.set('n', ']d', vim.diagnostic.goto_next, buf_opts)
+  vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, buf_opts)
+
+  local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
   if client.server_capabilities.documentFormattingProvider then
     vim.api.nvim_command [[augroup Format]]
@@ -59,36 +59,9 @@ nvim_lsp.sumneko_lua.setup { on_attach = on_attach,
 }
 
 rt.setup {
-  tools = {
-    runnables = {
-      use_telescope = true,
-    },
-    inlay_hints = {
-      auto = true,
-      show_parameter_hints = false,
-      parameter_hints_prefix = "",
-      other_hints_prefix = "",
-    },
-  },
-  server = {
     on_attach = on_attach,
+    flags = lsp_flags,
     settings = {
-      ["rust-analyzer"] = {
-        checkOnSave = {
-          command = "clippy",
-        },
-      },
-    },
-  },
-}
-
-nvim_lsp.pyright.setup {
-  on_attach = on_attach,
-  settings = {
-    python = {
-      analysis = {
-        typeCheckingMode = "off",
-      },
-    },
-  },
+      ["rust-analyzer"] = {}
+    }
 }
