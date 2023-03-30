@@ -23,8 +23,6 @@
 /.config/nvim/lua/*
 !/.config/nvim/after
 /.config/nvim/after/*
-!/.config/nvim/queries
-/.config/nvim/queries/*
 
 !/.config/mpv/scripts
 /.config/mpv/scripts/*
@@ -41,8 +39,6 @@
 #### Dirs
 !/.config/nvim/after/plugin
 /.config/nvim/after/plugin/*
-!/.config/nvim/queries/func
-/.config/nvim/queries/func/*
 
 #### Files
 !/.config/nvim/lua/base.lua
@@ -58,4 +54,3 @@
 !/.config/nvim/after/plugin/treesitter.rc.lua
 !/.config/nvim/after/plugin/web-devicons.rc.lua
 !/.config/nvim/after/plugin/copilot.rc.lua
-!/.config/nvim/queries/func/highlights.scm
