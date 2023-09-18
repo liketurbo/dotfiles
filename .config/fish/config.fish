@@ -5,7 +5,6 @@ set fish_greeting
 fish_vi_key_bindings
 
 # Aliases
-alias ll="exa -l --icons"
-alias lla="ll -a"
-alias vim="nvim"
+alias ll="eza -l --icons"
 alias cls="clear"
+alias vim="nvim"
