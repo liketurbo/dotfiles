@@ -2,9 +2,7 @@
   editor = vi
 [alias]
   cm = commit
-  co = checkout
   ss = status
-  ll = log --pretty=format:'%C(yellow)%h%Cred%d %Creset%s%Cblue [%cn]' --decorate
 [user]
   email = 3c9wjqgw5@mozmail.com
   name = Rami Chasygov
