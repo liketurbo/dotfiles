@@ -80,12 +80,15 @@ require("lazy").setup({
 			local builtin = require("telescope.builtin")
 
 			vim.keymap.set("n", "<C-p>", builtin.find_files, { noremap = true, silent = true })
+
 			telescope.setup {
 				defaults = {
 					mappings = {
 						n = {
-							["q"] = actions.close,
-							["l"] = actions.select_default
+							["<C-q>"] = actions.close,
+						},
+						i = {
+							["<C-q>"] = actions.close,
 						},
 					}
 				}
