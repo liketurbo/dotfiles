@@ -30,6 +30,8 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 4
 vim.cmd("set noexpandtab")
+-- Key sequence timeout
+vim.opt.timeoutlen = 250
 
 -- Maps
 vim.keymap.set('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })           -- copy
