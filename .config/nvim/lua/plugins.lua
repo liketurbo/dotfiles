@@ -60,10 +60,15 @@ require("lazy").setup({
 	{
 		"karb94/neoscroll.nvim",
 		config = function()
-			local neoscroll = require('neoscroll')
+			local neoscroll = require("neoscroll")
 			neoscroll.setup({
-				-- All these keys will be mapped to their corresponding default scrolling animation
-				mappings = { '<C-u>', '<C-d>' },
+				easing_function = nil
+			})
+
+			local config = require("neoscroll.config")
+			config.set_mappings({
+				['<C-u>'] = { 'scroll', { '-vim.wo.scroll', 'true', '150', [['sine']] } },
+				['<C-d>'] = { 'scroll', { 'vim.wo.scroll', 'true', '150', [['sine']] } }
 			})
 		end
 	},
