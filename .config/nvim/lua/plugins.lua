@@ -30,6 +30,7 @@ require("lazy").setup({
 	},
 	-- Tokyonight theme
 	"folke/tokyonight.nvim",
+	-- Telescope preview
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.2",
