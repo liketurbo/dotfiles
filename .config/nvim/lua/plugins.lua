@@ -41,7 +41,7 @@ require("lazy").setup({
 			local builtin = require("telescope.builtin")
 
 			vim.keymap.set("n", "<C-p>", builtin.find_files, { noremap = true, silent = true })
-			vim.keymap.set("n", "<leader>b", builtin.buffers, { noremap = true, silent = true })
+			vim.keymap.set("n", "<C-i>", builtin.buffers, { noremap = true, silent = true })
 
 			telescope.setup {
 				defaults = {
