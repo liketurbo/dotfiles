@@ -74,8 +74,10 @@ require("lazy").setup({
 				["<C-d>"] = { "scroll", {
 					"vim.wo.scroll", "true", "100", nil
 				} },
-				["<C-b>"] = { "scroll", { "-vim.api.nvim_win_get_height(0)", "true", "100", nil } },
-				["<C-f>"] = { "scroll", { "vim.api.nvim_win_get_height(0)", "true", "100", nil } },
+				["<C-b>"] = { "scroll", {
+					"-vim.api.nvim_win_get_height(0)", "true", "100", nil } },
+				["<C-f>"] = { "scroll", {
+					"vim.api.nvim_win_get_height(0)", "true", "100", nil } },
 				["zz"] = { "zz", { "100" } }
 			})
 		end
