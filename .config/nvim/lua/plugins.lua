@@ -67,8 +67,9 @@ require("lazy").setup({
 
 			local config = require("neoscroll.config")
 			config.set_mappings({
-				['<C-u>'] = { 'scroll', { '-vim.wo.scroll', 'true', '150', [['sine']] } },
-				['<C-d>'] = { 'scroll', { 'vim.wo.scroll', 'true', '150', [['sine']] } }
+				["<C-u>"] = { "scroll", { "-vim.wo.scroll", "true", "100", nil } },
+				["<C-d>"] = { "scroll", { "vim.wo.scroll", "true", "100", nil } },
+				["zz"] = { "zz", { "100" } }
 			})
 		end
 	},
@@ -78,6 +79,24 @@ require("lazy").setup({
 		config = function()
 			local lspconfig = require('lspconfig')
 			lspconfig.lua_ls.setup {}
+		end
+	},
+	-- Status line
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			local lualine = require("lualine")
+			lualine.setup {
+				options = {
+					component_separators = "",
+					section_separators = "",
+				},
+				sections = {
+					lualine_x = { "encoding" },
+					lualine_y = {}
+				}
+			}
 		end
 	}
 })
