@@ -28,8 +28,8 @@ require("lazy").setup({
 			})
 		end
 	},
-	-- Tokyonight theme
-	"folke/tokyonight.nvim",
+	-- Gruvbox theme
+	"ellisonleao/gruvbox.nvim",
 	-- Telescope preview
 	{
 		"nvim-telescope/telescope.nvim",
