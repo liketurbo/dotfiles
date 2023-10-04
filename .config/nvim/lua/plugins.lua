@@ -41,6 +41,7 @@ require("lazy").setup({
 			local builtin = require("telescope.builtin")
 
 			vim.keymap.set("n", "<C-p>", builtin.find_files, { noremap = true, silent = true })
+			vim.keymap.set("n", "<leader>b", builtin.buffers, { noremap = true, silent = true })
 
 			telescope.setup {
 				defaults = {
@@ -67,8 +68,14 @@ require("lazy").setup({
 
 			local config = require("neoscroll.config")
 			config.set_mappings({
-				["<C-u>"] = { "scroll", { "-vim.wo.scroll", "true", "100", nil } },
-				["<C-d>"] = { "scroll", { "vim.wo.scroll", "true", "100", nil } },
+				["<C-u>"] = { "scroll", {
+					"-vim.wo.scroll", "true", "100", nil
+				} },
+				["<C-d>"] = { "scroll", {
+					"vim.wo.scroll", "true", "100", nil
+				} },
+				["<C-b>"] = { "scroll", { "-vim.api.nvim_win_get_height(0)", "true", "100", nil } },
+				["<C-f>"] = { "scroll", { "vim.api.nvim_win_get_height(0)", "true", "100", nil } },
 				["zz"] = { "zz", { "100" } }
 			})
 		end
@@ -77,7 +84,7 @@ require("lazy").setup({
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			local lspconfig = require('lspconfig')
+			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup {}
 		end
 	},
