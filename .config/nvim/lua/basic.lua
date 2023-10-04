@@ -30,5 +30,7 @@ vim.cmd("set noexpandtab")
 vim.opt.timeoutlen = 300
 -- Highlight cursor line
 vim.opt.cursorline = true
--- Window edge space
+-- Vertical edge space
 vim.opt.scrolloff = 1
+-- Horizontal edge space
+vim.opt.sidescrolloff = 1
