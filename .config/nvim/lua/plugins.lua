@@ -45,9 +45,11 @@ require("lazy").setup({
 
 			telescope.setup {
 				defaults = {
+					initial_mode = "normal",
 					mappings = {
 						n = {
 							["<C-q>"] = actions.close,
+							["l"] = actions.select_default,
 						},
 						i = {
 							["<C-q>"] = actions.close,
