@@ -23,6 +23,8 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 1
 -- Horizontal edge space
 vim.opt.sidescrolloff = 1
+-- Disable search highlights
+vim.opt.hlsearch = false
 
 -- Custom maps
 require('maps');
