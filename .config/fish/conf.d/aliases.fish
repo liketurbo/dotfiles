@@ -1,10 +1,9 @@
-alias ls="eza --icons"
-alias lsa="eza --icons -a"
-alias ll="eza -l --icons"
-alias lla="eza -l --icons -a"
+alias ls="eza --icons -a"
+alias ll="eza -l --icons -g --smart-group"
+alias lla="ll -a"
 alias cls="clear"
 alias vim="nvim"
 function cd
   builtin cd $argv
-  lsa
+  ls
 end
