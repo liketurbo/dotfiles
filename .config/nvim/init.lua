@@ -7,8 +7,6 @@ vim.opt.listchars = 'eol:¬,space:·,tab:··'
 vim.opt.clipboard = 'unnamedplus'
 -- Number lines
 vim.opt.number = true
--- No wrap
-vim.opt.wrap = false
 -- Leader key
 vim.g.mapleader = ' '
 -- Tab 4 spaces
@@ -20,9 +18,9 @@ vim.opt.timeoutlen = 300
 -- Highlight cursor line
 vim.opt.cursorline = true
 -- Vertical edge space
-vim.opt.scrolloff = 1
+vim.opt.scrolloff = 10
 -- Horizontal edge space
-vim.opt.sidescrolloff = 1
+vim.opt.sidescrolloff = 10
 -- Disable search highlights
 vim.opt.hlsearch = false
 
