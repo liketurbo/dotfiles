@@ -2,9 +2,11 @@
   editor = vi
 [alias]
   cm = commit
+  co = checkout
   ss = status
+  df = diff
 [user]
-  email = 3c9wjqgw5@mozmail.com
+  email = liketurbo.work@gmail.com
   name = Rami Chasygov
 [init]
   defaultBranch = main
