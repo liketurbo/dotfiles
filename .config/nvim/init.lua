@@ -18,9 +18,9 @@ vim.opt.timeoutlen = 300
 -- Highlight cursor line
 vim.opt.cursorline = true
 -- Vertical edge space
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 3
 -- Horizontal edge space
-vim.opt.sidescrolloff = 10
+vim.opt.sidescrolloff = 3
 -- Disable search highlights
 vim.opt.hlsearch = false
 
