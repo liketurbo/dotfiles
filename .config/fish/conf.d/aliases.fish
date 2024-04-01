@@ -4,8 +4,3 @@ alias lla="ll -a"
 alias cls="clear"
 alias vim="nvim"
 alias cwd="pwd"
-
-function cd
-  builtin cd $argv
-  ls
-end
