@@ -1,11 +1,6 @@
 # no greeting
 set fish_greeting
 
-# use vi
-fish_vi_key_bindings
-bind -M insert -m default jk repaint
-bind -M insert -m default kj repaint
-
 # rclone
 set -x RCLONE_PASSWORD_COMMAND "pass rclone/config"
 
@@ -15,3 +10,6 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+# remap caps lock to esc
+setxkbmap -option caps:escape
