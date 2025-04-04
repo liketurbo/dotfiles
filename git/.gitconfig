@@ -3,8 +3,6 @@
 [alias]
   cm = commit
   co = checkout
-  ss = status
-  df = diff
 [user]
   email = liketurbo.work@gmail.com
   name = Rami Chasygov
