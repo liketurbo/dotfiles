@@ -1,5 +1,5 @@
-# Vim mode
+# vim mode
 fish_vi_key_bindings
 
-# Disable greeting
+# disable greeting
 set fish_greeting ""

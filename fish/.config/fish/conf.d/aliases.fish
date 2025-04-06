@@ -1,6 +1,8 @@
 if command -q eza
-	alias ls="eza --icons -a"
+	alias ls="eza --icons -a"	
 else
 	alias ls="ls -a"
 end
+
 alias cls="clear"
+alias vim="nvim"
