@@ -23,3 +23,6 @@ vim.keymap.set('i', '<C-s>', '<Esc>:w<CR>a', { noremap = true, silent = true })
 -- keymaps: quit with Ctrl+Q
 vim.keymap.set('n', '<C-q>', ':q<CR>', { noremap = true, silent = true })
 vim.keymap.set('i', '<C-q>', '<Esc>:q<CR>', { noremap = true, silent = true })
+
+-- do not keep highlights after search
+vim.opt.hlsearch = false
