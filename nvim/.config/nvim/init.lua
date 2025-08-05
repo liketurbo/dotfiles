@@ -26,3 +26,6 @@ vim.keymap.set('i', '<C-q>', '<Esc>:q<CR>', { noremap = true, silent = true })
 
 -- do not keep highlights after search
 vim.opt.hlsearch = false
+
+-- enable system clipboard
+vim.opt.clipboard = "unnamedplus"
