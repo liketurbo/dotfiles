@@ -15,3 +15,11 @@ vim.opt.number = true
 vim.opt.expandtab = false   -- use tabs, not spaces
 vim.opt.tabstop = 4         -- width of a tab character
 vim.opt.shiftwidth = 4      -- indent size for commands like >>
+
+-- keymap: save with Ctrl+S
+vim.keymap.set('n', '<C-s>', ':w<CR>', { noremap = true, silent = true })
+vim.keymap.set('i', '<C-s>', '<Esc>:w<CR>a', { noremap = true, silent = true })
+
+-- keymaps: quit with Ctrl+Q
+vim.keymap.set('n', '<C-q>', ':q<CR>', { noremap = true, silent = true })
+vim.keymap.set('i', '<C-q>', '<Esc>:q<CR>', { noremap = true, silent = true })
