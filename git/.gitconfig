@@ -1,10 +1,11 @@
 [core]
-  editor = vi
+	editor = vi
 [alias]
-  cm = commit
-  co = checkout
+	cm = commit
+	co = checkout
+	ss = status
 [user]
-  email = liketurbo.work@gmail.com
-  name = Rami Chasygov
+	email = liketurbo.work@gmail.com
+	name = Rami Chasygov
 [init]
-  defaultBranch = main
+	defaultBranch = main
